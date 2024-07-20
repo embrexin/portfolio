@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <!-- CSS only -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,h1 {font-family: "Montserrat", sans-serif}
+            img {margin-bottom: -7px}
+            .w3-row-padding img {margin-bottom: 12px}
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    </head>
+<body class="animatable">
+    <!-- JavaScript -->
+    <script defer src="script.js"></script>
+    
+    <!-- Header -->
+    <header class="header animatable">
+        <div class="header-content">
+            <p class="logo animatable">embrexin</p>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="nav-list animatable">
+                <li class="link-item">
+                    <a class="link active" aria-current="page" href="index.html" id = "click">Illustration</a>
+                </li>
+                <li class="link-item">
+                    <a class="link" href="photography.html" id = "click">Photography</a>
+                </li>
+                <li class="link-item">
+                    <a class="link" href="about.html" id = "click">About</a>
+                </li>
+                <li class="link-item">
+                    <a class="link" href="contact.html" id = "click">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="text animatable">
+        <h1>Illustration</h1>
+    </div>
+
+    <!-- Photo Background -->
+    <div class="background">
+        <img src="https://www.dropbox.com/scl/fi/izakppv5k437zc4drr3nh/arlecchino-min.jpg?rlkey=advh0rm7xe31ffxnz5cu6ipdu&st=68h120fz&raw=1" style="width:100%">
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row animatable">
+        <div class="column">
+        <img src="https://www.dropbox.com/scl/fi/gew3ht1xh2h1axenn9gi3/peace.jpg?rlkey=qsi2anystsf41xz9n0i1qc4hu&st=9cry9wvy&raw=1">
+        <img src="https://www.dropbox.com/scl/fi/mh7pr2iv56792a6nepvwn/Sunset-min.jpg?rlkey=kgoi2uvpzbm8meljb6brwjvht&st=qjm1yboz&raw=1">
+        <img src="https://www.dropbox.com/scl/fi/hcgmc62nmztaz3ku6sbsy/inprnt_pink-min.jpg?rlkey=7pm2izcowvyfx89vcpc93ljoi&st=ni0c89fz&raw=1">
+        </div>
+        <div class="column">
+            <img src="https://www.dropbox.com/scl/fi/20gf9e84z7wta5m53y8ja/sparkler-min.jpg?rlkey=faiz7fevb6lvvryo7mkqzj0ka&st=gpwmg9p2&raw=1">
+            <img src="https://www.dropbox.com/scl/fi/8frfzro7ew3x981qbn8uq/sky-min.jpg?rlkey=5gobf7bw8wetrkzncfegm8h93&st=vj2axf3p&raw=1">
+            <img src="https://www.dropbox.com/scl/fi/jgxo0rwrjom4slyjmadwm/inprnt_blue-min.jpg?rlkey=syxfewpz8kx7x4u443i3ksmn0&st=5t2g4rgc&raw=1">
+        </div>
+        <div class="column">
+            <img src="https://www.dropbox.com/scl/fi/u12r3pfmugml1hfswrdiq/yellow.jpg?rlkey=70rh5jkpdjwevczz0p8xn4mrp&st=yqjfg6on&raw=1">
+            <img src="https://www.dropbox.com/scl/fi/6lmyda397r3frkuzj1ir0/Sunbeams.jpg?rlkey=2r07ntliofoi3q0vuykq9xqhk&st=ptij98za&raw=1">
+            <img src="https://www.dropbox.com/scl/fi/k87ig0jw4isa4a05iqyfn/inprnt_Hu_Tao_Final-min.jpg?rlkey=31y9r4nmy2fukx2xnh3tiwut4&st=y7s6lcti&raw=1">
+            <img src="https://www.dropbox.com/scl/fi/9eu3o94gkruxdqoe5runj/siyeon.jpg?rlkey=uvcj5p3ztvrbwqx24wxirdun9&st=0ackw1op&raw=1">
+        </div>
+    </div>
+    <div id="fullpage" onclick="this.style.display='none';"></div>
+
+    <!-- Footer -->
+    <footer class="footer animatable"> 
+        <a href="https://www.instagram.com/embrexin/"> <i class="fa fa-instagram"></i> </a>
+        <a href="https://www.instagram.com/embrexin/"> <i class="fa fa-envelope"></i> </a>
+        <p>&copy;  2024 by embrexin</p>
+    </footer>
+    
+    <script>
+        // Toggle grid padding
+        function myFunction() {
+        var x = document.getElementById("myGrid");
+        if (x.className === "w3-row") {
+            x.className = "w3-row-padding";
+        } else { 
+            x.className = x.className.replace("w3-row-padding", "w3-row");
+        }
+        }
+    </script>
+</body>
+</html>
